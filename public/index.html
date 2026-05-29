@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terminal B3 - SSE</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="conteudo-principal">
+    <h1>Painel de Monitoramento Financeiro (SSE)</h1>
+    
+    <div class="container-metricas">
+      <div class="painel" style="border-top: 4px solid #ffca28;">
+        <h3>PETR4</h3>
+        <div class="valor" id="val-petr4">R$ --</div>
+      </div>
+      <div class="painel" style="border-top: 4px solid #4caf50;">
+        <h3>VALE3</h3>
+        <div class="valor" id="val-vale3">R$ --</div>
+      </div>
+      <div class="painel" style="border-top: 4px solid #ff5722;">
+        <h3>ITUB4</h3>
+        <div class="valor" id="val-itub4">R$ --</div>
+      </div>
+      <div class="painel" style="border-top: 4px solid #00bcd4;">
+        <h3>WEGE3</h3>
+        <div class="valor" id="val-wege3">R$ --</div>
+      </div>
+      <div class="painel" style="border-top: 4px solid #e91e63;">
+        <h3>BBAS3</h3>
+        <div class="valor" id="val-bbas3">R$ --</div>
+      </div>
+    </div>
+
+    <div class="painel-grafico">
+      <canvas id="graficoHistorico"></canvas>
+    </div>
+
+    <div class="status">
+      Conexão SSE: <span id="status-conexao">Aguardando...</span> | Última rede: <span id="ultima-atualizacao">--:--:--</span>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <h2>Notícias em Tempo Real</h2>
+    <div id="feed-noticias"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
