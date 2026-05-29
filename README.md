@@ -19,10 +19,24 @@ A arquitetura baseia-se na separação total de responsabilidades, servindo est�
 * `simulador.js` - Lógica de negócios isolada (motor do mercado, processamento de ticks e impacto de notícias).
 * `public/` - Diretório de arquivos estáticos servidos pelo backend.
 
-## Como Executar
+## ⚙️ Como Executar
 
-1. Certifique-se de possuir o [Node.js](https://nodejs.org/) instalado.
-2. Navegue até o diretório raiz do projeto via terminal.
-3. Inicie o servidor HTTP com o comando:
+Você pode executar este projeto de duas maneiras: diretamente via Node.js ou utilizando Docker. Por não possuir dependências externas (Zero `node_modules`), a execução nativa é imediata e não requer a etapa de instalação de pacotes.
+
+### Opção 1: Via Node.js (Nativo)
+**Pré-requisito:** Node.js instalado.
+1. Clone o repositório.
+2. Navegue até a raiz do projeto via terminal.
+3. Execute o comando:
    ```bash
    node server.js
+4. Acesse no navegador: http://localhost:3000
+
+### Opção 2: Via Docker (Recomendado)
+**Pré-requisito:** Docker e Docker Compose instalados.
+1. Clone o repositório.
+2. Navegue até a raiz do projeto via terminal.
+3. Suba o contêiner com o comando: 
+   ```bash
+   docker compose up -d
+4. Acesse no navegador: http://localhost:3000 (Para encerrar a execução, utilize docker compose down)

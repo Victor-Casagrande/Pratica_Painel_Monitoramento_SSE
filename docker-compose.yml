@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  simulador-b3:
+    build: .
+    container_name: sse-simulador-mercado
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
